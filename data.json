@@ -1,0 +1,36 @@
+{
+  "data": {
+    "session": [
+      {
+        "day": "Tuesday",
+        "time": "3:00-3:30 pm",
+        "student": "Mahmoud Ahmed Muhammed"
+      },
+      {
+        "day": "Tuesday",
+        "time": "3:30-4:00 pm",
+        "student": "Mahmoud Ahmed Muhammed"
+      },
+      {
+        "day": "Tuesday",
+        "time": "4:00-4:30 pm",
+        "student": "Hamza Muhammed Ali"
+      },
+      {
+        "day": "Tuesday",
+        "time": "4:30-5:00 pm",
+        "student": "Hamza Muhammed Ali"
+      },
+      {
+        "day": "Saturday",
+        "time": "9:00-9:30 am",
+        "student": "Group 7"
+      },
+      {
+        "day": "Saturday",
+        "time": "9:30-10:00 am",
+        "student": "Group 10"
+      }
+    ]
+  }
+}

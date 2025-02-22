@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Schedule</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Original Container (Visible on Small Screens) -->
+    <div class="container small-screen">
+      <!-- Saturday & Sunday -->
+      <div class="day-group">
+        <div class="time-container">
+          <div class="time time-header">Time</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+          <div class="time">12:00-12:30</div>
+          <div class="time">12:30-1:00</div>
+          <div class="time">1:00-1:30</div>
+          <div class="time">1:30-2:00</div>
+          <div class="time">2:00-2:30</div>
+          <div class="time">2:30-3:00</div>
+          <div class="time">3:00-3:30</div>
+          <div class="time">3:30-4:00</div>
+          <div class="time">4:00-4:30</div>
+          <div class="time">4:30-5:00</div>
+          <div class="time">5:00-5:30</div>
+          <div class="time">5:30-6:00</div>
+          <div class="time">6:00-6:30</div>
+          <div class="time">6:30-7:00</div>
+          <div class="time">7:00-7:30</div>
+          <div class="time">7:30-8:00</div>
+          <div class="time">8:00-8:30</div>
+          <div class="time">8:30-9:00</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+        </div>
+        <div class="saturday-div">
+          <div class="saturday-header">Saturday</div>
+          <div class="saturday-cell" id="saturday-9:00-9:30-am"></div>
+          <div class="saturday-cell" id="saturday-9:30-10:00-am"></div>
+          <div class="saturday-cell" id="saturday-10:00-10:30-am"></div>
+          <div class="saturday-cell" id="saturday-10:30-11:00-am"></div>
+          <div class="saturday-cell" id="saturday-11:00-11:30-am"></div>
+          <div class="saturday-cell" id="saturday-11:30-12:00-pm"></div>
+          <div class="saturday-cell" id="saturday-12:00-12:30-pm"></div>
+          <div class="saturday-cell" id="saturday-12:30-1:00-pm"></div>
+          <div class="saturday-cell" id="saturday-1:00-1:30-pm"></div>
+          <div class="saturday-cell" id="saturday-1:30-2:00-pm"></div>
+          <div class="saturday-cell" id="saturday-2:00-2:30-pm"></div>
+          <div class="saturday-cell" id="saturday-2:30-3:00-pm"></div>
+          <div class="saturday-cell" id="saturday-3:00-3:30-pm"></div>
+          <div class="saturday-cell" id="saturday-3:30-4:00-pm"></div>
+          <div class="saturday-cell" id="saturday-4:00-4:30-pm"></div>
+          <div class="saturday-cell" id="saturday-4:30-5:00-pm"></div>
+          <div class="saturday-cell" id="saturday-5:00-5:30-pm"></div>
+          <div class="saturday-cell" id="saturday-5:30-6:00-pm"></div>
+          <div class="saturday-cell" id="saturday-6:00-6:30-pm"></div>
+          <div class="saturday-cell" id="saturday-6:30-7:00-pm"></div>
+          <div class="saturday-cell" id="saturday-7:00-7:30-pm"></div>
+          <div class="saturday-cell" id="saturday-7:30-8:00-pm"></div>
+          <div class="saturday-cell" id="saturday-8:00-8:30-pm"></div>
+          <div class="saturday-cell" id="saturday-8:30-9:00-pm"></div>
+          <div class="saturday-cell" id="saturday-9:00-9:30-pm"></div>
+          <div class="saturday-cell" id="saturday-9:30-10:00-pm"></div>
+          <div class="saturday-cell" id="saturday-10:00-10:30-pm"></div>
+          <div class="saturday-cell" id="saturday-10:30-11:00-pm"></div>
+          <div class="saturday-cell" id="saturday-11:00-11:30-pm"></div>
+          <div class="saturday-cell" id="saturday-11:30-12:00-am"></div>
+        </div>
+        <div class="sunday-div">
+          <div class="sunday-header">Sunday</div>
+          <div class="sunday-cell" id="sunday-9:00-9:30-am"></div>
+          <div class="sunday-cell" id="sunday-9:30-10:00-am"></div>
+          <div class="sunday-cell" id="sunday-10:00-10:30-am"></div>
+          <div class="sunday-cell" id="sunday-10:30-11:00-am"></div>
+          <div class="sunday-cell" id="sunday-11:00-11:30-am"></div>
+          <div class="sunday-cell" id="sunday-11:30-12:00-pm"></div>
+          <div class="sunday-cell" id="sunday-12:00-12:30-pm"></div>
+          <div class="sunday-cell" id="sunday-12:30-1:00-pm"></div>
+          <div class="sunday-cell" id="sunday-1:00-1:30-pm"></div>
+          <div class="sunday-cell" id="sunday-1:30-2:00-pm"></div>
+          <div class="sunday-cell" id="sunday-2:00-2:30-pm"></div>
+          <div class="sunday-cell" id="sunday-2:30-3:00-pm"></div>
+          <div class="sunday-cell" id="sunday-3:00-3:30-pm"></div>
+          <div class="sunday-cell" id="sunday-3:30-4:00-pm"></div>
+          <div class="sunday-cell" id="sunday-4:00-4:30-pm"></div>
+          <div class="sunday-cell" id="sunday-4:30-5:00-pm"></div>
+          <div class="sunday-cell" id="sunday-5:00-5:30-pm"></div>
+          <div class="sunday-cell" id="sunday-5:30-6:00-pm"></div>
+          <div class="sunday-cell" id="sunday-6:00-6:30-pm"></div>
+          <div class="sunday-cell" id="sunday-6:30-7:00-pm"></div>
+          <div class="sunday-cell" id="sunday-7:00-7:30-pm"></div>
+          <div class="sunday-cell" id="sunday-7:30-8:00-pm"></div>
+          <div class="sunday-cell" id="sunday-8:00-8:30-pm"></div>
+          <div class="sunday-cell" id="sunday-8:30-9:00-pm"></div>
+          <div class="sunday-cell" id="sunday-9:00-9:30-pm"></div>
+          <div class="sunday-cell" id="sunday-9:30-10:00-pm"></div>
+          <div class="sunday-cell" id="sunday-10:00-10:30-pm"></div>
+          <div class="sunday-cell" id="sunday-10:30-11:00-pm"></div>
+          <div class="sunday-cell" id="sunday-11:00-11:30-pm"></div>
+          <div class="sunday-cell" id="sunday-11:30-12:00-am"></div>
+        </div>
+      </div>
+
+      <!-- Monday & Tuesday -->
+      <div class="day-group">
+        <div class="time-container time-container-of-monday-tuesday">
+          <div class="time time-header">Time</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+          <div class="time">12:00-12:30</div>
+          <div class="time">12:30-1:00</div>
+          <div class="time">1:00-1:30</div>
+          <div class="time">1:30-2:00</div>
+          <div class="time">2:00-2:30</div>
+          <div class="time">2:30-3:00</div>
+          <div class="time">3:00-3:30</div>
+          <div class="time">3:30-4:00</div>
+          <div class="time">4:00-4:30</div>
+          <div class="time">4:30-5:00</div>
+          <div class="time">5:00-5:30</div>
+          <div class="time">5:30-6:00</div>
+          <div class="time">6:00-6:30</div>
+          <div class="time">6:30-7:00</div>
+          <div class="time">7:00-7:30</div>
+          <div class="time">7:30-8:00</div>
+          <div class="time">8:00-8:30</div>
+          <div class="time">8:30-9:00</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+        </div>
+        <div class="monday-div">
+          <div class="monday-header">Monday</div>
+          <div class="monday-cell" id="monday-9:00-9:30-am"></div>
+          <div class="monday-cell" id="monday-9:30-10:00-am"></div>
+          <div class="monday-cell" id="monday-10:00-10:30-am"></div>
+          <div class="monday-cell" id="monday-10:30-11:00-am"></div>
+          <div class="monday-cell" id="monday-11:00-11:30-am"></div>
+          <div class="monday-cell" id="monday-11:30-12:00-pm"></div>
+          <div class="monday-cell" id="monday-12:00-12:30-pm"></div>
+          <div class="monday-cell" id="monday-12:30-1:00-pm"></div>
+          <div class="monday-cell" id="monday-1:00-1:30-pm"></div>
+          <div class="monday-cell" id="monday-1:30-2:00-pm"></div>
+          <div class="monday-cell" id="monday-2:00-2:30-pm"></div>
+          <div class="monday-cell" id="monday-2:30-3:00-pm"></div>
+          <div class="monday-cell" id="monday-3:00-3:30-pm"></div>
+          <div class="monday-cell" id="monday-3:30-4:00-pm"></div>
+          <div class="monday-cell" id="monday-4:00-4:30-pm"></div>
+          <div class="monday-cell" id="monday-4:30-5:00-pm"></div>
+          <div class="monday-cell" id="monday-5:00-5:30-pm"></div>
+          <div class="monday-cell" id="monday-5:30-6:00-pm"></div>
+          <div class="monday-cell" id="monday-6:00-6:30-pm"></div>
+          <div class="monday-cell" id="monday-6:30-7:00-pm"></div>
+          <div class="monday-cell" id="monday-7:00-7:30-pm"></div>
+          <div class="monday-cell" id="monday-7:30-8:00-pm"></div>
+          <div class="monday-cell" id="monday-8:00-8:30-pm"></div>
+          <div class="monday-cell" id="monday-8:30-9:00-pm"></div>
+          <div class="monday-cell" id="monday-9:00-9:30-pm"></div>
+          <div class="monday-cell" id="monday-9:30-10:00-pm"></div>
+          <div class="monday-cell" id="monday-10:00-10:30-pm"></div>
+          <div class="monday-cell" id="monday-10:30-11:00-pm"></div>
+          <div class="monday-cell" id="monday-11:00-11:30-pm"></div>
+          <div class="monday-cell" id="monday-11:30-12:00-am"></div>
+        </div>
+        <div class="tuesday-div">
+          <div class="tuesday-header">Tuesday</div>
+          <div class="tuesday-cell" id="tuesday-9:00-9:30-am"></div>
+          <div class="tuesday-cell" id="tuesday-9:30-10:00-am"></div>
+          <div class="tuesday-cell" id="tuesday-10:00-10:30-am"></div>
+          <div class="tuesday-cell" id="tuesday-10:30-11:00-am"></div>
+          <div class="tuesday-cell" id="tuesday-11:00-11:30-am"></div>
+          <div class="tuesday-cell" id="tuesday-11:30-12:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-12:00-12:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-12:30-1:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-1:00-1:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-1:30-2:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-2:00-2:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-2:30-3:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-3:00-3:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-3:30-4:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-4:00-4:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-4:30-5:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-5:00-5:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-5:30-6:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-6:00-6:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-6:30-7:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-7:00-7:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-7:30-8:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-8:00-8:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-8:30-9:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-9:00-9:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-9:30-10:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-10:00-10:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-10:30-11:00-pm"></div>
+          <div class="tuesday-cell" id="tuesday-11:00-11:30-pm"></div>
+          <div class="tuesday-cell" id="tuesday-11:30-12:00-am"></div>
+        </div>
+      </div>
+
+      <!-- Wednesday & Thursday -->
+      <div class="day-group">
+        <div class="time-container time-container-of-wednesday-thursday">
+          <div class="time time-header">Time</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+          <div class="time">12:00-12:30</div>
+          <div class="time">12:30-1:00</div>
+          <div class="time">1:00-1:30</div>
+          <div class="time">1:30-2:00</div>
+          <div class="time">2:00-2:30</div>
+          <div class="time">2:30-3:00</div>
+          <div class="time">3:00-3:30</div>
+          <div class="time">3:30-4:00</div>
+          <div class="time">4:00-4:30</div>
+          <div class="time">4:30-5:00</div>
+          <div class="time">5:00-5:30</div>
+          <div class="time">5:30-6:00</div>
+          <div class="time">6:00-6:30</div>
+          <div class="time">6:30-7:00</div>
+          <div class="time">7:00-7:30</div>
+          <div class="time">7:30-8:00</div>
+          <div class="time">8:00-8:30</div>
+          <div class="time">8:30-9:00</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+        </div>
+        <div class="wednesday-div">
+          <div class="wednesday-header">Wednesday</div>
+          <div class="wednesday-cell" id="wednesday-9:00-9:30-am"></div>
+          <div class="wednesday-cell" id="wednesday-9:30-10:00-am"></div>
+          <div class="wednesday-cell" id="wednesday-10:00-10:30-am"></div>
+          <div class="wednesday-cell" id="wednesday-10:30-11:00-am"></div>
+          <div class="wednesday-cell" id="wednesday-11:00-11:30-am"></div>
+          <div class="wednesday-cell" id="wednesday-11:30-12:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-12:00-12:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-12:30-1:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-1:00-1:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-1:30-2:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-2:00-2:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-2:30-3:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-3:00-3:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-3:30-4:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-4:00-4:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-4:30-5:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-5:00-5:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-5:30-6:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-6:00-6:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-6:30-7:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-7:00-7:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-7:30-8:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-8:00-8:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-8:30-9:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-9:00-9:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-9:30-10:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-10:00-10:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-10:30-11:00-pm"></div>
+          <div class="wednesday-cell" id="wednesday-11:00-11:30-pm"></div>
+          <div class="wednesday-cell" id="wednesday-11:30-12:00-am"></div>
+        </div>
+        <div class="thursday-div">
+          <div class="thursday-header">Thursday</div>
+          <div class="thursday-cell" id="thursday-9:00-9:30-am"></div>
+          <div class="thursday-cell" id="thursday-9:30-10:00-am"></div>
+          <div class="thursday-cell" id="thursday-10:00-10:30-am"></div>
+          <div class="thursday-cell" id="thursday-10:30-11:00-am"></div>
+          <div class="thursday-cell" id="thursday-11:00-11:30-am"></div>
+          <div class="thursday-cell" id="thursday-11:30-12:00-pm"></div>
+          <div class="thursday-cell" id="thursday-12:00-12:30-pm"></div>
+          <div class="thursday-cell" id="thursday-12:30-1:00-pm"></div>
+          <div class="thursday-cell" id="thursday-1:00-1:30-pm"></div>
+          <div class="thursday-cell" id="thursday-1:30-2:00-pm"></div>
+          <div class="thursday-cell" id="thursday-2:00-2:30-pm"></div>
+          <div class="thursday-cell" id="thursday-2:30-3:00-pm"></div>
+          <div class="thursday-cell" id="thursday-3:00-3:30-pm"></div>
+          <div class="thursday-cell" id="thursday-3:30-4:00-pm"></div>
+          <div class="thursday-cell" id="thursday-4:00-4:30-pm"></div>
+          <div class="thursday-cell" id="thursday-4:30-5:00-pm"></div>
+          <div class="thursday-cell" id="thursday-5:00-5:30-pm"></div>
+          <div class="thursday-cell" id="thursday-5:30-6:00-pm"></div>
+          <div class="thursday-cell" id="thursday-6:00-6:30-pm"></div>
+          <div class="thursday-cell" id="thursday-6:30-7:00-pm"></div>
+          <div class="thursday-cell" id="thursday-7:00-7:30-pm"></div>
+          <div class="thursday-cell" id="thursday-7:30-8:00-pm"></div>
+          <div class="thursday-cell" id="thursday-8:00-8:30-pm"></div>
+          <div class="thursday-cell" id="thursday-8:30-9:00-pm"></div>
+          <div class="thursday-cell" id="thursday-9:00-9:30-pm"></div>
+          <div class="thursday-cell" id="thursday-9:30-10:00-pm"></div>
+          <div class="thursday-cell" id="thursday-10:00-10:30-pm"></div>
+          <div class="thursday-cell" id="thursday-10:30-11:00-pm"></div>
+          <div class="thursday-cell" id="thursday-11:00-11:30-pm"></div>
+          <div class="thursday-cell" id="thursday-11:30-12:00-am"></div>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div class="day-group">
+        <div class="time-container time-container-of-friday">
+          <div class="time time-header">Time</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+          <div class="time">12:00-12:30</div>
+          <div class="time">12:30-1:00</div>
+          <div class="time">1:00-1:30</div>
+          <div class="time">1:30-2:00</div>
+          <div class="time">2:00-2:30</div>
+          <div class="time">2:30-3:00</div>
+          <div class="time">3:00-3:30</div>
+          <div class="time">3:30-4:00</div>
+          <div class="time">4:00-4:30</div>
+          <div class="time">4:30-5:00</div>
+          <div class="time">5:00-5:30</div>
+          <div class="time">5:30-6:00</div>
+          <div class="time">6:00-6:30</div>
+          <div class="time">6:30-7:00</div>
+          <div class="time">7:00-7:30</div>
+          <div class="time">7:30-8:00</div>
+          <div class="time">8:00-8:30</div>
+          <div class="time">8:30-9:00</div>
+          <div class="time">9:00-9:30</div>
+          <div class="time">9:30-10:00</div>
+          <div class="time">10:00-10:30</div>
+          <div class="time">10:30-11:00</div>
+          <div class="time">11:00-11:30</div>
+          <div class="time">11:30-12:00</div>
+        </div>
+        <div class="friday-div">
+          <div class="friday-header">Friday</div>
+          <div class="friday-cell" id="friday-9:00-9:30-am"></div>
+          <div class="friday-cell" id="friday-9:30-10:00-am"></div>
+          <div class="friday-cell" id="friday-10:00-10:30-am"></div>
+          <div class="friday-cell" id="friday-10:30-11:00-am"></div>
+          <div class="friday-cell" id="friday-11:00-11:30-am"></div>
+          <div class="friday-cell" id="friday-11:30-12:00-pm"></div>
+          <div class="friday-cell" id="friday-12:00-12:30-pm"></div>
+          <div class="friday-cell" id="friday-12:30-1:00-pm"></div>
+          <div class="friday-cell" id="friday-1:00-1:30-pm"></div>
+          <div class="friday-cell" id="friday-1:30-2:00-pm"></div>
+          <div class="friday-cell" id="friday-2:00-2:30-pm"></div>
+          <div class="friday-cell" id="friday-2:30-3:00-pm"></div>
+          <div class="friday-cell" id="friday-3:00-3:30-pm"></div>
+          <div class="friday-cell" id="friday-3:30-4:00-pm"></div>
+          <div class="friday-cell" id="friday-4:00-4:30-pm"></div>
+          <div class="friday-cell" id="friday-4:30-5:00-pm"></div>
+          <div class="friday-cell" id="friday-5:00-5:30-pm"></div>
+          <div class="friday-cell" id="friday-5:30-6:00-pm"></div>
+          <div class="friday-cell" id="friday-6:00-6:30-pm"></div>
+          <div class="friday-cell" id="friday-6:30-7:00-pm"></div>
+          <div class="friday-cell" id="friday-7:00-7:30-pm"></div>
+          <div class="friday-cell" id="friday-7:30-8:00-pm"></div>
+          <div class="friday-cell" id="friday-8:00-8:30-pm"></div>
+          <div class="friday-cell" id="friday-8:30-9:00-pm"></div>
+          <div class="friday-cell" id="friday-9:00-9:30-pm"></div>
+          <div class="friday-cell" id="friday-9:30-10:00-pm"></div>
+          <div class="friday-cell" id="friday-10:00-10:30-pm"></div>
+          <div class="friday-cell" id="friday-10:30-11:00-pm"></div>
+          <div class="friday-cell" id="friday-11:00-11:30-pm"></div>
+          <div class="friday-cell" id="friday-11:30-12:00-am"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

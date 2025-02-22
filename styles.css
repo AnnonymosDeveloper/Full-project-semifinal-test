@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Time Container */
+.time-container {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.time {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-header {
+  background-color: #168c36;
+  color: white;
+  font-weight: bold;
+}
+
+/* Day Columns */
+.day-group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.saturday-div,
+.sunday-div,
+.monday-div,
+.tuesday-div,
+.wednesday-div,
+.thursday-div,
+.friday-div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.saturday-header,
+.sunday-header,
+.monday-header,
+.tuesday-header,
+.wednesday-header,
+.thursday-header,
+.friday-header {
+  background-color: #168c36;
+  border: 1px solid black;
+  color: white;
+  padding: 10px 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saturday-cell,
+.sunday-cell,
+.monday-cell,
+.tuesday-cell,
+.wednesday-cell,
+.thursday-cell,
+.friday-cell {
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Large Screen Layout (Desktop/PC) */
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .time-container {
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  .day-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: calc(100% - 100px);
+  }
+
+  .saturday-div,
+  .sunday-div,
+  .monday-div,
+  .tuesday-div,
+  .wednesday-div,
+  .thursday-div,
+  .friday-div {
+    width: 100px;
+    min-width: 0;
+  }
+  .time-container-of-monday-tuesday,
+  .time-container-of-wednesday-thursday,
+  .time-container-of-friday {
+    display: none;
+  }
+}
